@@ -61,6 +61,6 @@ def CalculateOhmValue(bandA,bandB,bandC,bandD):
 		if bandD:
 			hot = "always"
 		#alternative is print
-		print("This wire's temperature rating is",tempRating, "cats are a",cats,",shocks are",shockRated,"ok and after shock the resistor is",hot,"hot")
+		#print("This wire's temperature rating is",tempRating, "cats are a",cats,",shocks are",shockRated,"ok and after shock the resistor is",hot,"hot")
 		return "This wire's temperature rating is",tempRating, "cats are a",cats,",shocks are",shockRated,"ok and after shock the resistor is",hot,"hot"
 ICalculateOhmValues()
