@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
 #below is using pytest
 
-from part3colorbands import CalculateOhmValue
+from part1 import CalculateOhmValue
 
 
 def test_answer():
