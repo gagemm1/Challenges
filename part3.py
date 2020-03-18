@@ -45,10 +45,12 @@ def CalculateOhmValue(bandA,bandB,bandC,bandD):
 	cats = "No"
 	tempRating = "Less than 200"
 	shockRated = "not"
-	#smelly is none because the wires are always smelly
-	smelly = None
+	#hot is none because the wires are always hot
+	hot = None
 	if averageRatings < 1 or averageRatings > 5:
-		print("This wire is out of spec, replace wire")
+		#alternative is print
+		#print("This wire is out of spec, replace wires")
+		return "This wire is out of spec, replace wires"
 	else:
 		if 2 < bandA > 1:
 			tempRating = "In between 200 and 500"
@@ -57,16 +59,8 @@ def CalculateOhmValue(bandA,bandB,bandC,bandD):
 		if bandC == 5:
 			shockRated = ""
 		if bandD:
-			smelly = "always"
-	print("This wire's temperature rating is",tempRating, "cats are a",cats,",shocks are",shockRated,"ok and after shock the resistor is",smelly,"smelly" )
-	
-
+			hot = "always"
+		#alternative is print
+		print("This wire's temperature rating is",tempRating, "cats are a",cats,",shocks are",shockRated,"ok and after shock the resistor is",hot,"hot")
+		return "This wire's temperature rating is",tempRating, "cats are a",cats,",shocks are",shockRated,"ok and after shock the resistor is",hot,"hot"
 ICalculateOhmValues()
-
-
-#print(dataset.iloc[0][0])
-#print(dataset.mean(axis=[0][0]))
-
-#print(len(dataset))
-
-
